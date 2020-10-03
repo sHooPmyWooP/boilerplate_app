@@ -47,3 +47,4 @@ az webapp config appsettings set
 ## ToDo's
 - [ ] Add basic models for necessary pages
 - [ ] Add rest_framework support
+- [ ] Add a basic API structure
