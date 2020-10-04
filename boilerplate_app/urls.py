@@ -7,14 +7,16 @@ from wagtail.core import urls as wagtail_urls
 from wagtail.documents import urls as wagtaildocs_urls
 
 from search import views as search_views
-from api.router import api_router
+from custom_api.router import api_router
+from custom_api import urls as api_custom_urls
 
 urlpatterns = [
     url(r"^django-admin/", admin.site.urls),
     url(r"^admin/", include(wagtailadmin_urls)),
     url(r"^documents/", include(wagtaildocs_urls)),
     url(r"^search/$", search_views.search, name="search"),
-    url("^api/v2/", api_router.urls),
+    url(r"^api/v2/", api_router.urls),
+    url(r"^api/custom/", include(api_custom_urls)),
 ]
 
 

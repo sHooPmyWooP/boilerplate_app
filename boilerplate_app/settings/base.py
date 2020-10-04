@@ -27,10 +27,13 @@ INSTALLED_APPS = [
     # LOCAL
     "home",
     "search",
+    "custom_content",
     # API
     "rest_framework",
     "wagtail.api.v2",
     # WAGTAIL
+    "wagtail.contrib.styleguide",
+    "wagtail.contrib.modeladmin",
     "wagtail.contrib.forms",
     "wagtail.contrib.redirects",
     "wagtail.embeds",
