@@ -43,7 +43,7 @@ az webapp config appsettings set
         DBUSER="<admin_username>@<db-server_name>" 
         DBPASS="<pw>"
 ```
-- Connect to the webapp via SSH, switch to directory site/wwwroot
+- Connect to the webapp via SSH, switch to directory home/site/wwwroot
    - adress: <webapp_name>.csm.azurewebsites.net/webssh/host
    - run migrations, as usual `manage.py migrate`
 
